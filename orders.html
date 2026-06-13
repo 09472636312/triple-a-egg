@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orders Management</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>🥚 Triple A</h2>
+
+<a href="dashboard.html">Dashboard</a>
+<a href="inventory.html">Inventory</a>
+<a href="orders.html">Orders</a>
+<a href="customers.html">Customers</a>
+<a href="history.html">History</a>
+<a href="reports.html">Reports</a>
+
+</div>
+
+<div class="main">
+
+<h1>Orders Management</h1>
+
+<div class="card">
+
+<h3>Create New Order</h3>
+
+<input
+type="text"
+id="customerName"
+placeholder="Customer Name">
+
+<input
+type="text"
+id="customerContact"
+placeholder="Contact Number">
+
+<input
+type="text"
+id="customerAddress"
+placeholder="Address">
+
+<select id="eggCategory">
+
+</select>
+
+<input
+type="number"
+id="trayCount"
+placeholder="Number of Trays"
+oninput="calculateTotal()">
+
+<input
+type="text"
+id="pricePerTray"
+readonly>
+
+<input
+type="text"
+id="totalAmount"
+readonly>
+
+<button onclick="createOrder()">
+Create Order
+</button>
+
+</div>
+
+<div class="card">
+
+<h3>Orders List</h3>
+
+<table>
+
+<thead>
+
+<tr>
+<th>Customer</th>
+<th>Category</th>
+<th>Trays</th>
+<th>Total</th>
+<th>Status</th>
+<th>Details</th>
+</tr>
+
+</thead>
+
+<tbody id="ordersBody">
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<script src="orders.js"></script>
+
+</body>
+</html>

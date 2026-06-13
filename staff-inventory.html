@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inventory Management</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>🥚 Triple A</h2>
+
+<a href="staff-dashboard.html">Dashboard</a>
+</div>
+
+<div class="main">
+
+<h1>Inventory Management</h1>
+
+<div class="card">
+
+<h3>Add Inventory</h3>
+
+<select id="category">
+
+<option value="">Select Category</option>
+<option>Small</option>
+<option>Medium</option>
+<option>Large</option>
+<option>Extra Large</option>
+<option>Jumbo</option>
+
+</select>
+
+<input
+type="number"
+id="trays"
+placeholder="Number of Trays">
+
+<input
+type="number"
+id="pricePerTray"
+placeholder="Price Per Tray">
+
+<button onclick="saveInventory()">
+Save Inventory
+</button>
+
+</div>
+
+<div class="card">
+
+<input
+type="text"
+id="searchInventory"
+placeholder="Search Category..."
+onkeyup="renderInventory()">
+
+</div>
+
+<div class="card">
+
+<h3>Inventory List</h3>
+
+<table id="inventoryTable">
+
+<thead>
+
+<tr>
+
+<th>Category</th>
+<th>Trays</th>
+<th>Price</th>
+<th>Status</th>
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody id="inventoryBody">
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<script src="inventory.js"></script>
+
+</body>
+</html>
