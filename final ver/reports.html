@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Revenue Reports</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>🥚 Triple A</h2>
+
+<a href="dashboard.html">Dashboard</a>
+<a href="inventory.html">Inventory</a>
+<a href="orders.html">Orders</a>
+<a href="customers.html">Customers</a>
+<a href="history.html">History</a>
+<a href="reports.html">Reports</a>
+
+</div>
+
+<div class="main">
+
+<h1>Revenue Reports</h1>
+
+<div class="dashboard-grid">
+
+<div class="card">
+<h3>Total Revenue</h3>
+<h2 id="totalRevenue">₱0</h2>
+</div>
+
+<div class="card">
+<h3>Total Orders</h3>
+<h2 id="totalOrders">0</h2>
+</div>
+
+<div class="card">
+<h3>Top Selling Category</h3>
+<h2 id="topCategory">-</h2>
+</div>
+
+<div class="card">
+<h3>Average Order</h3>
+<h2 id="averageOrder">₱0</h2>
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Sales Revenue Chart</h2>
+
+<canvas id="salesChart"></canvas>
+
+</div>
+
+<div class="card">
+
+<h2>Category Performance</h2>
+
+<canvas id="categoryChart"></canvas>
+
+</div>
+
+<div class="card">
+
+<button onclick="exportReportCSV()">
+Export Report CSV
+</button>
+
+</div>
+
+</div>
+
+<script src="reports.js"></script>
+
+</body>
+</html>

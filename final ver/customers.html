@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customer Management</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>🥚 Triple A</h2>
+
+<a href="dashboard.html">Dashboard</a>
+<a href="inventory.html">Inventory</a>
+<a href="orders.html">Orders</a>
+<a href="customers.html">Customers</a>
+<a href="history.html">History</a>
+<a href="reports.html">Reports</a>
+
+</div>
+
+<div class="main">
+
+<h1>Customer Management</h1>
+
+<div class="card">
+
+<input
+type="text"
+id="searchCustomer"
+placeholder="Search Customer..."
+onkeyup="renderCustomers()">
+
+</div>
+
+<div class="card">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+<th>Contact</th>
+<th>Address</th>
+<th>Orders</th>
+<th>Total Revenue</th>
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody id="customerBody">
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<script src="customers.js"></script>
+
+</body>
+</html>

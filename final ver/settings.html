@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>System Settings</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>🥚 Triple A  </h2>
+
+<a href="dashboard.html">Dashboard</a>
+<a href="inventory.html">Inventory</a>
+<a href="orders.html">Orders</a>
+<a href="customers.html">Customers</a>
+<a href="history.html">History</a>
+<a href="reports.html">Reports</a>
+<a href="settings.html">Settings</a>
+
+</div>
+
+<div class="main">
+
+<h1>System Settings</h1>
+
+<div class="card">
+
+<h2>Dark Mode</h2>
+
+<button onclick="toggleDarkMode()">
+Toggle Dark Mode
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>Change Password</h2>
+
+<input
+type="password"
+id="newPassword"
+placeholder="New Password">
+
+<button onclick="changePassword()">
+Update Password
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>Backup System Data</h2>
+
+<button onclick="backupData()">
+Download Backup
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>Restore System Data</h2>
+
+<input
+type="file"
+id="restoreFile">
+
+<button onclick="restoreData()">
+Restore Backup
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>Logout</h2>
+
+<button onclick="logout()">
+Logout
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>System Information</h2>
+
+<p><strong>System:</strong> Triple A EggTrack</p>
+<p><strong>Version:</strong> 1.0</p>
+<p><strong>Storage:</strong> LocalStorage</p>
+<p><strong>Developer:</strong> Alfredo Marmolejo Jr.</p>
+
+</div>
+
+</div>
+
+<script src="settings.js"></script>
+
+</body>
+</html>
